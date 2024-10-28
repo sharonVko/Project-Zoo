@@ -5,9 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="./zooAdministration.ts" defer></script>
     <title>Project Zoo OOP-Projekt-TS-Level-3_1</title>
+    <link rel="stylesheet" href="./zooAdministration.css">
 </head>
 <body>
-    <h1>Zoo</h1>
-    
+    <h1>Zoo Administration </h1>
+<section>
+   
+    <h3>Let's register our new entrant</h3>
+    <form id="newAnimal">
+
+        <label for="">Animal Type:  
+            <select name="animalType" id="selectedAnimalType">
+                <option value="" disabled selected hidden>please select..</option> <!-- options will be generated in TS -->
+            </select>
+        </label>
+        <label for="">Name:
+           <input type="text" name="name" id="animalNameInput" placeholder="animal name">
+        </label>  
+        <label for="">Year of Birth:
+           <input type="number" name="birthyear" id="birthYearInput" placeholder="2000">
+        </label> 
+        <label for="">Continent of Origin:
+            <select name="continent" id="selectedContinent">
+                <option value="" disabled selected hidden>please select...</option>              
+            </select>
+        </label>  
+        <label for="">Special Needs:
+            <input name="specialneeds" id="specialNeedsInput" placeholder="food, medication, etc. ...">
+            </input>
+        </label>   
+        <label for="">Enclosure ID:
+            <select name="enclosure" id="selectedEnclosureId">
+                <option value="" disabled selected hidden>please select...</option>
+            </select>
+        </label>    
+    </form>
+</section>
+<section>
+    <button type="button" id="createAnimalBtn">Create Animal</button>  
+    <div id=""></div>
+</section>
 </body>
 </html>
